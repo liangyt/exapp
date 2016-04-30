@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content=" " />
+    <meta name="description" content=" " />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge, chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>Line</title>
+    <script src="/static/js/jquery/jquery.1.8.3.js"></script>
+    <script src="/static/hchart/js/highcharts.js"></script>
+    <script>
+    $(function() {
+        $('#container1').highcharts({
+            chart: {
+                type: 'line',
+                zoomType: 'x',  // x 轴可以缩放
+                panning: true,  // x 轴可以移动
+                panKey: 'shift' // 按住shift键移动
+            },
+            credits: {  // 版本信息不显示
+                enabled:false
+            },
+            title: {
+                text: null,  // 不显示标题
+                x: -20 //center
+            },
+            subtitle: {
+                text: null,
+                x: -20
+            },
+            xAxis: {
+                labels:{
+                    step:3  // 步长，隔几个显示一个数
+                },
+                categories: ['2016-01-01','2016-01-02','2016-01-03','2016-01-04','2016-01-05','2016-01-06','2016-01-07','2016-01-08','2016-01-09','2016-01-010','2016-01-11','2016-01-12']
+            },
+            plotOptions: {
+                series: {
+                    marker: {
+                        enabled: false,  // 不显示线上的小点
+                        symbol: 'circle',
+                        radius: 2,
+                        states: {
+                            hover: {
+                                enabled: true
+                            }
+                        }
+                    }
+                }
+            },
+            yAxis: [{
+                tickWidth:1,
+
+                lineWidth:1, // 基准线
+                title: {
+                    text: null
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }],
+                labels:{
+                    formatter:function(){
+                        return this.value + '%';
+                    }
+                }
+            }/*,
+            {
+                opposite:true,
+                title: {
+                    text: 'Temperature (°C)'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            }*/],
+            tooltip: {
+                valueSuffix: '°C'
+            },
+            legend: {
+                layout: 'horizontal', // 水平方式  还有垂直方式 vertical
+                align: 'center',
+                verticalAlign: 'bottom',
+                borderWidth: 0
+            },
+            series: [{
+                yAxis:0,
+                name: 'Tokyo',
+                data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+            }, {
+                yAxis:0,
+                name: 'New York',
+                data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+            }, {
+                yAxis:0,
+                name: 'Berlin',
+                data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+            }/*, {
+                yAxis:1,
+                // type:'area',
+                name: 'London',
+                data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+            }*/]
+        });
+
+        $('#container2').highcharts({
+            chart: {
+                type: 'line',
+                zoomType: 'x',
+                panning: true,
+                panKey: 'shift'
+            },
+            credits: {  // 版本信息不显示
+                enabled:false
+            },
+            title: {
+                text: null,  // 不显示标题
+                x: -20 //center
+            },
+            subtitle: {
+                text: null,
+                x: -20
+            },
+            xAxis: {
+                labels:{
+                    // step:3  // 步长，隔几个显示一个数
+                },
+                categories: ['2016-01-01','2016-01-02','2016-01-03','2016-01-04','2016-01-05','2016-01-06','2016-01-07','2016-01-08','2016-01-09','2016-01-010','2016-01-11','2016-01-12']
+            },
+            plotOptions: {
+                series: {
+                    marker: {
+                        enabled: false,  // 不显示线上的小点
+                        symbol: 'circle',
+                        radius: 2,
+                        states: {
+                            hover: {
+                                enabled: true
+                            }
+                        }
+                    }
+                }
+            },
+            yAxis: {
+                tickWidth:1,
+
+                lineWidth:1, // 基准线
+                title: {
+                    text: null
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }],
+                labels:{
+                    formatter:function(){
+                        return this.value + '%';
+                    }
+                }
+            },
+            tooltip: {
+                valueSuffix: '°C'
+            },
+            legend: {
+                layout: 'horizontal', // 水平方式  还有垂直方式 vertical
+                align: 'center',
+                verticalAlign: 'top',
+                borderWidth: 0
+            },
+            series: [{
+                yAxis:0,
+                name: 'Berlin',
+                data: [-0.9,-0.6,-3.5,-8.4,-13.5,-1.0,-18.6,-1.9,-14.3,-1.01,-3.9,-1.0]
+            }, {
+                type:'area',
+                name: 'London',
+                data: [-3.9,-4.2,-5.7,-8.5,-1.9,-15.2,-1.0,-1.6,-14.2,-10.3,-6.6,-4.8]
+            }]
+        });
+
+        $('#container3').highcharts({ //图表展示容器，与div的id保持一致
+            legend:{
+                enabled:false // 隐藏图例
+            },
+            credits: {
+                enabled:false
+            },
+            chart: {
+                type: 'column', //指定图表的类型，默认是折线图（line）
+                style:{
+                    fontSize:'12px',
+                    fontWeight:'bold'
+                },
+                alignTicks:false,
+                inverted:true
+            },
+            title: {
+                text: '个股选择', //指定图表标题
+
+            },
+            xAxis: {
+                lineWidth:1,
+                categories: ['机械设备', '汽车', '银行', '通信', '综合'] //指定x轴分组
+            },
+            yAxis: {
+                lineWidth:1,
+                title: {
+                    text: null //指定y轴的标题
+                },
+                labels:{
+                    enabled:true,
+                    formatter:function() {
+                        return this.value + "%";
+                    }
+                }
+            },
+            series: [{ //指定数据列
+                name: 'Jane', //数据列名
+                data: [1, -1, 4, 5,2] //数据
+            }]
+        });
+
+        $('#container4').highcharts({ //图表展示容器，与div的id保持一致
+            legend:{
+                // enabled:false // 隐藏图例
+            },
+            credits: {
+                enabled:false
+            },
+            chart: {
+                type: 'column', //指定图表的类型，默认是折线图（line）
+                style:{
+                    fontSize:'12px',
+                    fontWeight:'bold'
+                },
+                alignTicks:false
+            },
+            title: {
+                text: '个股选择', //指定图表标题
+
+            },
+            xAxis: {
+                lineWidth:1,
+                categories: ['机械设备', '汽车', '银行', '通信', '综合'] //指定x轴分组
+            },
+            yAxis: {
+                lineWidth:1,
+                title: {
+                    text: null //指定y轴的标题
+                },
+                labels:{
+                    enabled:true,
+                    formatter:function() {
+                        return this.value + "%";
+                    }
+                }
+            },
+            series: [{ //指定数据列
+                name: 'Jane', //数据列名
+                data: [1, 10, 4, 5, 2] //数据
+            }]
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div id="container1" style="min-width:800px;height:400px"></div>
+    <div id="container2" style="min-width:800px;height:400px"></div>
+    <div id="container3" style="min-width:400px;height:400px"></div>
+    <div id="container4" style="min-width:400px;height:400px"></div>
+</body>
+
+</html>

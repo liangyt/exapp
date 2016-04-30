@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>积分</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="/static/sui/css/sm.css">
+    <link rel="stylesheet" href="/static/sui/css/sm-extend.css">
+    <link rel="stylesheet" href="/static/sui/css/sm-style.css">
+</head>
+
+<body>
+    <div class="page-group">
+        <!-- 你的html代码 -->
+        <!--首页-->
+        <div class="page page-current" id="page-index">
+            <header class="bar bar-nav">
+                <a class="icon icon-settings pull-left open-panel" data-panel="#leftpanel"></a>
+                <a class="icon icon-refresh pull-right"></a>
+                <h1 class="title">积分商城</h1>
+            </header>
+            <div class="content">
+                <!-- 这里是页面内容区 -->
+                <!--轮番图-->
+                <div>
+                    <div class="swiper-container indexswiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="/static/sui/img/gril.jpg"></div>
+                            <div class="swiper-slide"><img src="/static/sui/img/gril.jpg"></div>
+                            <div class="swiper-slide"><img src="/static/sui/img/gril.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--大项-->
+                <div class="content-block classify">
+                    <div class="content-padded grid-demo">
+                        <div class="row">
+                            <div class="col-25">
+                                <div class="word mycent">我的积分</div>
+                                <div class="word"><a href="#integral" style="color: red;">1234567</a></div>
+                                <div class="word">我能兑换的</div>
+                            </div>
+                            <div class="col-25">
+                                <img src="/static/sui/img/ico_01.png" alt="">
+                                <div class="word">赚积分</div>
+                            </div>
+                            <div class="col-25">
+                                <a href="#exchange"><img src="/static/sui/img/ico_02.png" alt=""></a>
+                                <div class="word">兑换记录</div>
+                            </div>
+                            <div class="col-25"><img src="/static/sui/img/ico_03.png" alt="">
+                                <div class="word">摇一摇</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-block flash">
+                    <div class="content-padded grid-demo">
+                        <div class="row">
+                            <div class="col-25"><span class="icon icon-computer"></span>快讯</div>
+                            <div class="col-75">
+                                <marquee behavior="" direction="">我只是来测试一下而已了，没有什么其它的事情了</marquee>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--分类-->
+                <div class="content-block allclassify">
+                    <div class="content-padded grid-demo">
+                        <div class="row">
+                            <div class="col-25">
+                                <a href="#prolistpage"><img src="/static/sui/img/ico_menu_01.png" alt=""></a>
+                                <div class="word">家居用品</div>
+                            </div>
+                            <div class="col-25">
+                                <a href="#prolistpage"><img src="/static/sui/img/ico_menu_01.png" alt=""></a>
+                                <div class="word">家用电器</div>
+                            </div>
+                            <div class="col-25">
+                                <a href="#prolistpage"><img src="/static/sui/img/ico_menu_02.png" alt=""></a>
+                                <div class="word">健康个护</div>
+                            </div>
+                            <div class="col-25">
+                                <a href="#prolistpage"><img src="/static/sui/img/ico_menu_03.png" alt=""></a>
+                                <div class="word">数码娱乐</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <a href="#prolistpage"><img src="/static/sui/img/ico_menu_05.png" alt=""></a>
+                                <div class="word">户外运动</div>
+                            </div>
+                            <div class="col-25">
+                                <a href="#prolistpage"><img src="/static/sui/img/ico_menu_06.png" alt=""></a>
+                                <div class="word">母婴用品</div>
+                            </div>
+                            <div class="col-25">
+                                <a href="#prolistpage"><img src="/static/sui/img/ico_menu_07.png" alt=""></a>
+                                <div class="word">虚拟电子</div>
+                            </div>
+                            <div class="col-25">
+                                <a href="#prolistpage"><img src="/static/sui/img/ico_menu_08.png" alt=""></a>
+                                <div class="word">全部</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-block-title">
+                    <h3>热门兑换</h3></div>
+                <div class="list-block media-list">
+                    <ul>
+                        <li>
+                            <a href="#proinfo" class="item-link item-content">
+                                <div class="item-media"><img src="/static/sui/img/gril.jpg" style='width: 4rem;'></div>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">佰草集太极.日月.蕴美精华</div>
+                                    </div>
+                                    <div class="item-subtitle">佰草集太极.日月.蕴美精华sadfafasfa</div>
+                                    <div class="item-text">积分：800分</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#proinfo" class="item-link item-content">
+                                <div class="item-media"><img src="/static/sui/img/gril.jpg" style='width: 4rem;'></div>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">佰草集太极.日月.蕴美精华</div>
+                                    </div>
+                                    <div class="item-subtitle">佰草集太极.日月.蕴美精华</div>
+                                    <div class="item-text">积分：800分</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-block-title">
+                    <h3>新品上架</h3></div>
+                <div class="list-block media-list">
+                    <ul>
+                        <li>
+                            <a href="#proinfo" class="item-link item-content">
+                                <div class="item-media"><img src="/static/sui/img/gril.jpg" style='width: 4rem;'></div>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">佰草集太极.日月.蕴美精华</div>
+                                    </div>
+                                    <div class="item-subtitle">佰草集太极.日月.蕴美精华</div>
+                                    <div class="item-text">积分：800分</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#proinfo" class="item-link item-content">
+                                <div class="item-media"><img src="/static/sui/img/gril.jpg" style='width: 4rem;'></div>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">佰草集太极.日月.蕴美精华</div>
+                                    </div>
+                                    <div class="item-subtitle">佰草集太极.日月.蕴美精华</div>
+                                    <div class="item-text">积分：800分</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-block-title">
+                    <h3>小编推荐</h3></div>
+                <div class="list-block media-list">
+                    <ul>
+                        <li>
+                            <a href="#proinfo" class="item-link item-content">
+                                <div class="item-media"><img src="/static/sui/img/gril.jpg" style='width: 4rem;'></div>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">佰草集太极.日月.蕴美精华</div>
+                                    </div>
+                                    <div class="item-subtitle">佰草集太极.日月.蕴美精华</div>
+                                    <div class="item-text">积分：800分</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#proinfo" class="item-link item-content">
+                                <div class="item-media"><img src="/static/sui/img/gril.jpg" style='width: 4rem;'></div>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">佰草集太极.日月.蕴美精华</div>
+                                    </div>
+                                    <div class="item-subtitle">佰草集太极.日月.蕴美精华</div>
+                                    <div class="item-text">积分：800分</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--列表页-->
+        <div id="prolistpage" class="page">
+            <header class="bar bar-nav">
+                <a class="icon icon-left pull-left" onclick="history.go(-1)"></a>
+                <h1 class="title"><a href="#" class="create-actions">全部 <span class="icon icon-caret"></span></a></h1>
+            </header>
+            <!-- content start -->
+            <div class="content content-prolist">
+                <div class="z-top">
+                    <!-- 搜索栏 -->
+                    <div class="searchbar ">
+                        <a class="searchbar-cancel">取消</a>
+                        <div class="search-input searchbar-padded">
+                            <label class="icon icon-search" for="search"></label>
+                            <input type="search" id="search" placeholder="搜索">
+                        </div>
+                    </div>
+                    <div class="grid-demo">
+                        <div class="row no-gutter ">
+                            <div class="col-50">
+                                <input type="checkbox" /> 显示我能兑换的
+                            </div>
+                            <div class="col-50 sort-asc" data-pro="sort-asc">
+                                <a href="#"><span class="icon icon-me"></span> 积分由高到低排</a>
+                            </div>
+                        </div>
+                        <!-- js添加class『disB』 显示隐藏元素 -->
+                        <div class=" sort-des row no-gutter disN sort-des" data-pro="sort-des">
+                            <div class="col-50">&nbsp;</div>
+                            <div class="col-50"><a href="#"><span class="icon icon-me"></span> 积分由高到低排</a></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 弹层背景 js添加class『disB』 显示隐藏元素 -->
+                <div class="layerBg" data-pro="layerBg"></div>
+                <!-- 无限滚动加载 start 添加 class infinite-scroll 和 data-distance-->
+                <div class="infinite-scroll">
+                    <!-- 列表 -->
+                    <div class="list-block media-list list-pro">
+                        <ul class="list-container">
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><img src="/static/sui/img/gril.jpg" style='width: 4.3rem;'></div>
+                                    <div class="item-inner">
+                                        <div class="item-title-row">
+                                            <div class="item-title">碧欧泉Biotherm 活泉嫩手霜 50ml</div>
+                                        </div>
+                                        <div class="item-subtitle">积分 <span class="bigfont-orange">38,090</span></div>
+                                        <p><a href="#proinfo" class="button button-warning button-change pull-right">立即兑换</a></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><img src="/static/sui/img/gril.jpg" style='width: 4.3rem;'></div>
+                                    <div class="item-inner">
+                                        <div class="item-title-row">
+                                            <div class="item-title">碧欧泉Biotherm 活泉嫩手霜 50ml</div>
+                                        </div>
+                                        <div class="item-subtitle">积分 <span class="bigfont-orange">38,090</span></div>
+                                        <p><a href="#proinfo" class="button button-warning button-change  pull-right">立即兑换</a></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><img src="/static/sui/img/gril.jpg" style='width: 4.3rem;'></div>
+                                    <div class="item-inner">
+                                        <div class="item-title-row">
+                                            <div class="item-title">碧欧泉Biotherm 活泉嫩手霜 50ml</div>
+                                        </div>
+                                        <div class="item-subtitle">积分 <span class="bigfont-orange">38,090</span></div>
+                                        <p><a href="#proinfo" class="button button-warning button-change  pull-right">立即兑换</a></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><img src="/static/sui/img/gril.jpg" style='width: 4.3rem;'></div>
+                                    <div class="item-inner">
+                                        <div class="item-title-row">
+                                            <div class="item-title">碧欧泉Biotherm 活泉嫩手霜 50ml</div>
+                                        </div>
+                                        <div class="item-subtitle">积分 <span class="bigfont-orange">38,090</span></div>
+                                        <p><a href="#proinfo" class="button button-warning button-change  pull-right">立即兑换</a></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><img src="/static/sui/img/gril.jpg" style='width: 4.3rem;'></div>
+                                    <div class="item-inner">
+                                        <div class="item-title-row">
+                                            <div class="item-title">碧欧泉Biotherm 活泉嫩手霜 50ml</div>
+                                        </div>
+                                        <div class="item-subtitle">积分 <span class="bigfont-orange">38,090</span></div>
+                                        <p><a href="#proinfo" class="button button-warning button-change  pull-right">立即兑换</a></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><img src="/static/sui/img/gril.jpg" style='width: 4.3rem;'></div>
+                                    <div class="item-inner">
+                                        <div class="item-title-row">
+                                            <div class="item-title">碧欧泉Biotherm 活泉嫩手霜 50ml</div>
+                                        </div>
+                                        <div class="item-subtitle">积分 <span class="bigfont-orange">38,090</span></div>
+                                        <p><a href="#proinfo" class="button button-warning button-change  pull-right">立即兑换</a></p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end 列表 -->
+                    <!-- 加载提示符 -->
+                    <div class="infinite-scroll-preloader">
+                        <div class="preloader"></div>
+                    </div>
+                </div>
+                <!-- 无限滚动加载  end -->
+            </div>
+            <!-- content end -->
+        </div>
+        <!--详情页-->
+        <div class="page" id="proinfo">
+            <header class="bar bar-nav">
+                <a class="icon icon-left pull-left" onclick="history.go(-1)"></a>
+                <h1 class="title">产品详情</h1>
+            </header>
+            <!-- content start -->
+            <div class="content content-proinfo">
+                <!-- slider -->
+                <div class="swiper-container" data-space-between='10'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/static/sui/img/gril.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/static/sui/img/gril.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/static/sui/img/gril.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- slider end -->
+                <!-- info -->
+                <div class="list-block media-list info-list">
+                    <ul>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">碧欧泉Biotherm 活泉嫩手霜 50ml</div>
+                                    </div>
+                                    <div class="item-subtitle">库存：72</div>
+                                    <div class="item-subtitle">积分 <span class="bigfont-orange">38,090</span></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- info end-->
+                <!-- info detail -->
+                <div class="content-block">
+                    <h4>商品介绍</h4>
+                    <p>全球女性热爱超过60年的经典配方，冬日呵护双手的必备单品</p>
+                    <p>- 海藻精粹：深度滋养双手肌肤，预防手部老化，防止手部肌肤出现衰老的现象</p>
+                    <p>-SPF8抗氧化配方：预防改善手部出现的斑点、老化现象</p>
+                    <p>-泛酰醇：强韧指甲，防止指甲出现脆弱易折电话</p>
+                    <p>防水配方：洗手后滋润感依旧</p>
+                    <p>柔润丝滑质地：快速吸收，使用感愉悦</p>
+                    <p class="text-center">
+                        <img class='card-cover' src="/static/sui/img/gril.jpg" alt="">
+                    </p>
+                </div>
+                <!-- info detail end -->
+                <!-- 工具栏 -->
+                <nav class="bar bar-footer bar-tab bar-position">
+                    <div class="content-padded grid-demo">
+                        <div class="row">
+                            <div class="col-50">
+                                <div class="content-padded grid-demo">
+                                    <div class="row">
+                                        <div class="col-30"><a href="#" class="button">+</a></div>
+                                        <div class="col-40">
+                                            <input type="text" size="4">
+                                        </div>
+                                        <div class="col-30"><a href="#" class="button">-</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-50">
+                                <div class="tab-item external tab-button">
+                                    <span>所需积分: 38,090</span>
+                                    <div><a href="#orderfill">立即兑换</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- content end -->
+        </div>
+        <!--提交订单页-->
+        <div class="page" id="orderfill">
+            <header class="bar bar-nav">
+                <a class="icon icon-left pull-left" onclick="history.go(-1)"></a>
+                <h1 class="title">填写订单信息</h1>
+            </header>
+            <!-- content start -->
+            <div class="content content-orderfill">
+                <div class="content-block-title">商品清单</div>
+                <div class="list-block media-list info-list">
+                    <ul>
+                        <li class="item-content">
+                            <div class="item-media"><img src="/static/sui/img/gril.jpg" width="70"></div>
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title">灿坤EUPA/跳式烤面包机</div>
+                                </div>
+                                <div class="item-subtitle">积分 <span class="font-orange">38,090</span></div>
+                                <div class="item-subtitle">数量：1</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-block-title">选择收货地址</div>
+                <div class="list-block media-list info-list">
+                    <ul>
+                        <li class="item-link item-content">
+                            <div class="item-inner">
+                                <a href="#addresslist" class="button-light">
+                                    <div class="item-title-row row">
+                                        <div class="col-40 item-title"><span class="icon icon-me"></span>张三四</div>
+                                        <div class="col-60 item-title"><span class="icon icon-phone"></span>138***38000</div>
+                                    </div>
+                                    <div class="item-subtitle">北京市海淀区中关村北大街42号 泰康创新大厦</div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="item-inner new-address "><a href="#address" class="button-light"><span class="icon icon-me"></span>添加新地址</a></div>
+                </div>
+                <div class="content-block-title">配送方式及配送时间</div>
+                <div class="list-block media-list">
+                    <ul>
+                        <li>
+                            <label class="label-checkbox item-content">
+                                <input type="radio" name="my-radio">
+                                <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-subtitle">收货时间不限</div>
+                                </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="label-checkbox item-content">
+                                <input type="radio" name="my-radio">
+                                <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-subtitle">只工作日送货(双休日、假日不用送)</div>
+                                </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="label-checkbox item-content">
+                                <input type="radio" name="my-radio">
+                                <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-subtitle">双休日、假日送货</div>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                    <a href="#" class="dilevery-aging">查看配送时效</a>
+                </div>
+                <!-- 工具栏 -->
+                <nav class=" bar-tab bar-position">
+                    <div class="tab-item external tab-num ">
+                        <div class="order-item">消费积分 <span class="bigfont-orange">38，742</span></div>
+                        <div class="order-item">运费 <span class="bigfont-orange">免费</span></div>
+                    </div>
+                    <div class="tab-item external tab-button">
+                        <a href="#success" class="button-light">
+                            <div>提交订单</div>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <!-- content end -->
+        </div>
+        <!--地址列表-->
+        <div class="page" id="addresslist">
+            <header class="bar bar-nav">
+                <a class="button button-link button-nav pull-left" href="javascript:history.go(-1);">
+                    <span class="icon icon-left"></span>
+                </a>
+                <h1 class="title">地址薄</h1>
+            </header>
+            <!-- content start -->
+            <div class="content content-orderfill">
+                <div class="list-block media-list">
+                    <ul class="ul-addr">
+                        <li class="li-addr">
+                            <label class="label-checkbox item-content">
+                                <input type="radio" name="my-radio">
+                                <div class="item-media"> <i class="icon icon-form-checkbox"></i>
+                                </div>
+                                <div class="item-inner">
+                                    <a href="#orderfill">
+                                        <div class="item-title-row">
+                                            <div class="item-title">
+                                                <span class="icon icon-me"></span> 张三四
+                                                <span class="icon icon-phone"></span> 138***38000
+                                            </div>
+                                        </div>
+                                        <div class="item-subtitle">
+                                            北京市海淀区中关村北大街42号 泰康
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item-media i-addr"><a href="#address"><span class="icon icon-edit"></a></span>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="li-addr">
+                            <label class="label-checkbox item-content">
+                                <input type="radio" name="my-radio">
+                                <div class="item-media"> <i class="icon icon-form-checkbox"></i>
+                                </div>
+                                <div class="item-inner">
+                                    <a href="#orderfill">
+                                        <div class="item-title-row">
+                                            <div class="item-title">
+                                                <span class="icon icon-me"></span> 张三四
+                                                <span class="icon icon-phone"></span> 138***38000
+                                            </div>
+                                        </div>
+                                        <div class="item-subtitle">
+                                            北京市海淀区中关村北大街42号 泰康
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item-media i-addr"> <a href="#address"><span class="icon icon-edit"></a></span>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="li-addr">
+                            <label class="label-checkbox item-content">
+                                <input type="radio" name="my-radio">
+                                <div class="item-media"> <i class="icon icon-form-checkbox"></i>
+                                </div>
+                                <div class="item-inner">
+                                    <a href="#orderfill">
+                                        <div class="item-title-row">
+                                            <div class="item-title">
+                                                <span class="icon icon-me"></span> 张三四
+                                                <span class="icon icon-phone"></span> 138***38000
+                                            </div>
+                                        </div>
+                                        <div class="item-subtitle">
+                                            北京市海淀区中关村北大街42号 泰康
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item-media i-addr">
+                                    <a href="#address"><span class="icon icon-edit"></a></span>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item-inner new-address "><a href="#address" class="button-light"><span class="icon icon-edit"></span> 添加新地址</a></div>
+            </div>
+            <!-- content end -->
+        </div>
+        <!--地址添加删除更新-->
+        <div class="page" id="address">
+            <header class="bar bar-nav">
+                <a class="button button-link button-nav pull-left" href="javascript:history.go(-1);">
+                    <span class="icon icon-left"></span>
+                </a>
+                <h1 class="title">地址薄</h1>
+                <button class="button button-link button-nav pull-right" id="addressdel">
+                    删除
+                </button>
+            </header>
+            <!-- content start -->
+            <div class="content content-orderfill">
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title labels item-select">姓　　名：</div>
+                                    <div class="item-input">
+                                        <input type="text" class="item-select" placeholder="请输入收货人姓名">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content item-link">
+                                <div class="item-inner">
+                                    <div class="item-title labels item-select">所 在 地 ：</div>
+                                    <div class="item-input">
+                                        <input type="text" id="city-picker" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title labels item-select">详细地址：</div>
+                                    <div class="item-input">
+                                        <input type="text" class="item-select" placeholder="请输入详细的收货地址">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title labels item-select">邮　　编：</div>
+                                    <div class="item-input">
+                                        <input type="text" class="item-select" placeholder="请输入邮编">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Date -->
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title labels item-select">手　　机：</div>
+                                    <div class="item-input">
+                                        <input type="text" class="item-select" placeholder="请输入收货人手机号" maxlength="11">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-block">
+                    <p class="text-center item-select">
+                        <label for="set"><input type="checkbox" id="set" checked="checked"> 设置为默认收货地址</label></p>
+                    <p><a href="#" class="button button-fill button-danger button-save">保存 </a></p>
+                </div>
+            </div>
+            <!-- content end -->
+        </div>
+        <!--提交成功-->
+        <div class="page" id="success">
+            <header class="bar bar-nav">
+                <a class="button button-link button-nav pull-left" href="#page-index">
+                    <span class="icon icon-left"></span>
+                </a>
+                <h1 class="title">兑换成功</h1>
+            </header>
+            <!-- content start -->
+            <div class="content content-orderfill page-sucess">
+                <div class="content-block text-center">
+                    <p>
+                        <img src="/static/sui/img/ico_sucess.png" style="width: 5rem;"></p>
+                    <p class="tip-info">
+                        <span class="icon icon-check"></span> 恭喜您，兑换成功！
+                    </p>
+                    <div class="tip-word">
+                        消费积分：
+                        <span class="bigfont-orange">38,742</span>
+                    </div>
+                    <div class="order-item tip-word">结余：38,742</div>
+                </div>
+                <div class="content-block">
+                    <p>
+                        <a href="#orderdetail" class="button button-fill button-danger button-save">查看兑换订单</a>
+                    </p>
+                    <p>
+                        <a href="#prolistpage" class="button button-big button-save button-continue">继续逛逛</a>
+                    </p>
+                </div>
+            </div>
+            <!-- content end -->
+        </div>
+        <!--订单详情-->
+        <div class="page" id="orderdetail">
+            <header class="bar bar-nav">
+                <a class="icon icon-left pull-left" onclick="history.go(-1)"></a>
+                <h1 class="title">订单详情</h1>
+            </header>
+            <div class="content">
+                <div class="content-block-title">配送方式及配送时间</div>
+                <div class="list-block">
+                    <ul>
+                        <li class="item-content item-content1 item-content2">
+                            <div class="item-inner">
+                                <div class="item-title">订单编号：12398734873987</div>
+                            </div>
+                        </li>
+                        <li class="item-content item-content1">
+                            <div class="item-inner">
+                                <div class="item-title">订单状态：配送中</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-block-title">商品清单</div>
+                <div class="list-block media-list">
+                    <ul>
+                        <li class="item-content1">
+                            <div class="item-content">
+                                <div class="item-media"><img src="/static/sui/img/gril.jpg" style='width: 4rem;'></div>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">烤面包机</div>
+                                    </div>
+                                    <div class="item-subtitle">积分 38090</div>
+                                    <div class="item-text">数量：1</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-block-title">收货地址</div>
+                <div class="list-block media-list">
+                    <ul>
+                        <li class="item-content item-content1">
+                            <div class="item-inner">
+                                <p><span class="icon icon-me"></span> 张三 <span class="icon icon-phone"></span>13113339090</p>
+                                <p>北京市海淀区</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--兑换记录-->
+        <div id="exchange" class="page">
+            <header class="bar bar-nav">
+                <a class="icon icon-left pull-left" onclick="history.go(-1)"></a>
+                <h1 class="title">兑换记录</h1>
+            </header>
+            <div class="content infinite-scroll" data-distance="100">
+                <div class="list-block media-list">
+                    <ul class="list-container">
+                        <li class="item-content1">
+                            <a href="#orderdetail" class="item-link item-content">
+                                <ul style="padding-left:0; width:100%;">
+                                    <li>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">订单编号：12398735873987 配送中</div>
+                                            </div>
+                                            <div class="item-subtitle">兑换日期：2015.12.30 13:45</div>
+                                            <div class="item-text">消费积分：3545</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-media">
+                                            <img src="/static/sui/img/gril.jpg" width="54">
+                                            <img src="/static/sui/img/gril.jpg" width="54">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="item-content1">
+                            <a href="#orderdetail" class="item-link item-content">
+                                <ul style="padding-left:0; width:100%;">
+                                    <li>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">订单编号：12398735873987 配送中</div>
+                                            </div>
+                                            <div class="item-subtitle">兑换日期：2015.12.30 13:45</div>
+                                            <div class="item-text">消费积分：3545</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-media">
+                                            <img src="/static/sui/img/gril.jpg" width="54">
+                                            <img src="/static/sui/img/gril.jpg" width="54">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="item-content1">
+                            <a href="#orderdetail" class="item-link item-content">
+                                <ul style="padding-left:0; width:100%;">
+                                    <li>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">订单编号：12398735873987 配送中</div>
+                                            </div>
+                                            <div class="item-subtitle">兑换日期：2015.12.30 13:45</div>
+                                            <div class="item-text">消费积分：3545</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-media">
+                                            <img src="/static/sui/img/gril.jpg" width="54">
+                                            <img src="/static/sui/img/gril.jpg" width="54">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="item-content1">
+                            <a href="#orderdetail" class="item-link item-content">
+                                <ul style="padding-left:0; width:100%;">
+                                    <li>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">订单编号：12398735873987 配送中</div>
+                                            </div>
+                                            <div class="item-subtitle">兑换日期：2015.12.30 13:45</div>
+                                            <div class="item-text">消费积分：3545</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-media">
+                                            <img src="/static/sui/img/gril.jpg" width="54">
+                                            <img src="/static/sui/img/gril.jpg" width="54">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="infinite-scroll-preloader">
+                    <div class="preloader"></div>
+                </div>
+            </div>
+        </div>
+        <!--个人中心-->
+        <div id="integral" class="page">
+            <header class="bar bar-nav">
+                <a class="icon icon-left pull-left" onclick="history.go(-1)"></a>
+                <h1 class="title">积分明细</h1>
+            </header>
+            <div class="content" data-type="">
+                <div class="content-block content-block1">
+                    <h2>我的积分</h2>
+                    <h1>1567</h1>
+                    <div class="buttons-row" data-offset="44">
+                        <a href="#tab1" class="tab-link active button">积分奖励制度</a>
+                        <a href="#tab2" class="tab-link button">积分兑换制度</a>
+                    </div>
+                    <div class="tabs tabs1">
+                        <div id="tab1" class="tab active infinite-scroll">
+                            <div class="list-block media-list">
+                                <ul class="list-container">
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">完善注册信息奖励</div>
+                                                    <div class="item-after">+65</div>
+                                                </div>
+                                                <div class="item-subtitle">2015.12.30 13:45</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">完善注册信息奖励</div>
+                                                    <div class="item-after">+65</div>
+                                                </div>
+                                                <div class="item-subtitle">2015.12.30 13:45</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">完善注册信息奖励</div>
+                                                    <div class="item-after">+65</div>
+                                                </div>
+                                                <div class="item-subtitle">2015.12.30 13:45</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">完善注册信息奖励</div>
+                                                    <div class="item-after">+65</div>
+                                                </div>
+                                                <div class="item-subtitle">2015.12.30 13:45</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">完善注册信息奖励</div>
+                                                    <div class="item-after">+65</div>
+                                                </div>
+                                                <div class="item-subtitle">2015.12.30 13:45</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">完善注册信息奖励</div>
+                                                    <div class="item-after">+65</div>
+                                                </div>
+                                                <div class="item-subtitle">2015.12.30 13:45</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">完善注册信息奖励</div>
+                                                    <div class="item-after">+65</div>
+                                                </div>
+                                                <div class="item-subtitle">2015.12.30 13:45</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="infinite-scroll-preloader" style="margin-top:-20px; background-color:#fff; margin:0;">
+                                <div class="preloader"></div>
+                            </div>
+                        </div>
+                        <div id="tab2" class="tab infinite-scroll">
+                            <div class="list-block media-list">
+                                <ul class="list-container">
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">完善注册信息兑换</div>
+                                                    <div class="item-after">+65</div>
+                                                </div>
+                                                <div class="item-subtitle">2015.12.30 13:45</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">完善注册信息兑换</div>
+                                                    <div class="item-after">+65</div>
+                                                </div>
+                                                <div class="item-subtitle">2015.12.30 13:45</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">完善注册信息兑换</div>
+                                                    <div class="item-after">+65</div>
+                                                </div>
+                                                <div class="item-subtitle">2015.12.30 13:45</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">完善注册信息兑换</div>
+                                                    <div class="item-after">+65</div>
+                                                </div>
+                                                <div class="item-subtitle">2015.12.30 13:45</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">完善注册信息兑换</div>
+                                                    <div class="item-after">+65</div>
+                                                </div>
+                                                <div class="item-subtitle">2015.12.30 13:45</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">完善注册信息兑换</div>
+                                                    <div class="item-after">+65</div>
+                                                </div>
+                                                <div class="item-subtitle">2015.12.30 13:45</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">完善注册信息兑换</div>
+                                                    <div class="item-after">+65</div>
+                                                </div>
+                                                <div class="item-subtitle">2015.12.30 13:45</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="infinite-scroll-preloader" style="margin-top:-20px; background-color:#fff; margin:0;">
+                                <div class="preloader"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-overlay"></div>
+        <!--左侧栏-->
+        <div class="panel panel-left panel-reveal" id="leftpanel">
+            <div class="content-block">
+                <p><a href="prolist.html">列表</a></p>
+                <!-- Click on link with "close-panel" class will close panel -->
+                <p><a href="#" class="close-panel">关闭</a></p>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript' src='/static/sui/js/zepto.min.js' charset='utf-8'></script>
+    <script>
+    $.config = {
+        router: true
+    }
+    </script>
+    <script type='text/javascript' src='/static/sui/js/sm.js' charset='utf-8'></script>
+    <script type='text/javascript' src='/static/sui/js/sm-extend.js' charset='utf-8'></script>
+    <script type='text/javascript' src='/static/sui/js/sm-city-picker.js' charset='utf-8'></script>
+    <script type='text/javascript' src='/static/sui/js/index.js' charset='utf-8'></script>
+</body>
+
+</html>

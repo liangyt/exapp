@@ -1,0 +1,355 @@
+
+.button-submit {
+  top: 0;
+  background: #ff602f;
+  color: #fff;
+  border-radius: 0;
+  border: none;
+}
+.mb10 {
+  margin-bottom: 1rem;
+  background: #fff;
+}
+.content-block .tip-info {
+  font-size: 1rem;
+}
+.content-block .tip-word {
+  width: 32%;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 0.6rem;
+  color: #666;
+}
+.content-orderfill.page-sucess {
+  background: #fff;
+}
+.list-block {
+  margin: 0;
+}
+.list-block ul.ul-addr {
+  background: #f1f1f1;
+}
+.list-block .li-addr {
+  margin-bottom: 1rem;
+  background: #fff;
+}
+.list-block .item-title.labels {
+  width: 30%;
+}
+.list-block .item-inner .item-select {
+  font-size: 0.7rem;
+}
+.item-media.i-addr {
+  width: 3rem;
+  padding-left: 1rem;
+  border-left: 1px solid #f1f1f1;
+}
+.button.button-save {
+  border-radius: 0;
+  height: 2.4rem;
+  line-height: 2.4rem;
+}
+.button.button-continue {
+  color: #333;
+  border: 1px solid #ccc;
+}
+.card-content-inner.card-list {
+  margin: .5rem;
+  background: #f9f9f9;
+}
+.indexswiper {
+  height: 160px;
+  padding-bottom: 0px;
+}
+.indexswiper .swiper-slide img {
+  height: 160px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.mycent {
+  margin-top: .4rem;
+}
+.classify {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  height: 4rem;
+}
+.classify img {
+  margin-top: .3rem;
+  width: 2rem;
+}
+.classify .word {
+  font-size: .72rem;
+}
+.classify .row {
+  text-align: center;
+}
+.allclassify {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  height: 7.4rem;
+}
+.allclassify img {
+  margin-top: .3rem;
+  width: 2rem;
+}
+.allclassify .word {
+  font-size: .72rem;
+}
+.allclassify .row {
+  text-align: center;
+}
+.flash {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  height: 2rem;
+  line-height: 2rem;
+}
+body.with-panel-left-reveal .page {
+  transform: translate3d(5rem, 0, 0);
+}
+.panel {
+  width: 5rem;
+}
+body.with-panel-left-reveal .panel-overlay {
+  margin-left: 5rem;
+}
+.bar {
+  background-color: #ff602f;
+}
+.content-block1 {
+  margin: 0;
+  padding: 0;
+  background-color: #ff602f;
+}
+.content-block > h2 {
+  margin: 0;
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 0.5rem;
+  color: #fff;
+}
+.content-block > h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+.list-block {
+  margin: .75rem 0;
+  margin-bottom: .02rem;
+}
+.tabs1 {
+  background-color: #fff;
+}
+.buttons-row {
+  padding: 0 0.75rem;
+}
+.item-media img {
+  margin-right: .5rem;
+}
+.list-block > ul > li.item-content1 {
+  border-bottom: .75rem solid #efeff4;
+  background-color: #fff;
+}
+.list-block > ul > li.item-content2 {
+  border-bottom: none;
+  background-color: #fff;
+}
+.list-block > ul > li.item-content1:last-child {
+  border-bottom: none;
+}
+.content-block-title {
+  margin-top: .75rem;
+}
+/*
+	* base
+	* add by lw
+	* 16.3.21
+*/
+.z-top {
+  position: relative;
+  z-index: 1000;
+}
+.layerBg {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0.8;
+  display: none;
+}
+.disN {
+  display: none;
+}
+.disB {
+  display: block;
+}
+.font-orange {
+  color: #ff602f;
+}
+.bigfont-orange {
+  color: #ff602f;
+  font-size: .75rem;
+}
+/*
+	* prolist.html
+	* add by lw
+	* 16.3.21
+*/
+.content-prolist .media-list .item-title,
+.content-prolist .media-list .item-subtitle {
+  font-size: .6rem;
+  font-weight: lighter;
+}
+.content-prolist .grid-demo .row {
+  background: #fff;
+  padding: 0.6rem;
+  border-top: 1px solid #e3e3e3;
+  color: #666;
+  font-size: 0.6rem;
+}
+.content-prolist .grid-demo .row a {
+  color: #666;
+}
+.bar .title {
+  cursor: pointer;
+}
+.bar .title .icon {
+  font-size: .8rem;
+}
+.bar .title .icon.icon-caret {
+  top: 0rem;
+  margin-left: 0;
+}
+.button-change {
+  width: 3.8rem;
+  font-size: .6rem;
+}
+.list-pro {
+  margin: 0;
+}
+.info-list.media-list .item-title {
+  font-size: 0.75rem;
+  font-weight: lighter;
+}
+.info-list .item-subtitle {
+  font-size: 0.6rem;
+}
+/*
+	* proinfo.html
+	* add by lw
+	* 16.3.22
+*/
+/* 幻灯片 */
+.swiper-container {
+  padding-bottom: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.swiper-container-horizontal > .swiper-pagination {
+  bottom: .4rem;
+}
+.swiper-pagination-bullet-active {
+  background: #ff602f;
+}
+.content-proinfo h4 {
+  color: #333;
+  font-weight: lighter;
+  margin-top: .75rem;
+  margin-bottom: .5rem;
+}
+.content-proinfo .list-block {
+  margin-top: .35rem;
+}
+.content-proinfo .content-block {
+  background: #fff;
+  padding: .01rem .5rem .5rem .75rem;
+  margin: .35rem 0;
+}
+.content-proinfo .content-block p {
+  margin: 0;
+  color: #999;
+  font-size: .6rem;
+}
+.content-proinfo .content-block img {
+  padding: 1.5rem 0;
+}
+.bar-tab .tab-num {
+  color: #333;
+  background: #fff;
+  width: 1.5%;
+}
+.bar-tab .tab-num .order-item {
+  text-align: left;
+  margin-left: .6rem;
+  font-size: .6rem;
+}
+.bar-tab .tab-button {
+  font-size: 0.75rem;
+}
+.bar-tab .tab-button span {
+  font-size: .6rem;
+}
+/**2016-3-25 add by liangyongtong*/
+.bar-position {
+  position: fixed;
+  height: 3rem;
+}
+.bar-position .tab-item {
+  height: 3rem;
+}
+
+.content-orderfill .icon {
+  color: #ff602f;
+  padding-right: .4rem;
+}
+.content-orderfill .content-block-title {
+  margin-top: 0.65rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+}
+.content-orderfill .list-block {
+  margin: 0;
+}
+.content-orderfill .list-block.list-dilevery .item-subtitle {
+  color: #333;
+}
+.new-address {
+  text-align: center;
+  font-size: .75rem;
+  background: #fff;
+  padding: .5rem 0;
+}
+.dilevery-aging {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  color: #333;
+  font-size: 0.6rem;
+  padding: .4rem 0;
+  margin-bottom: 1rem;
+}

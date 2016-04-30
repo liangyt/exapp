@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content=" " />
+    <meta name="description" content=" " />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge, chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>Column</title>
+    <script src="/static/js/jquery/jquery.1.8.3.js"></script>
+    <script src="/static/hchart/js/highcharts.js"></script>
+    <script>
+    $(function() {
+        $('#container').highcharts({ //图表展示容器，与div的id保持一致
+            credits: {
+                enabled:false
+            },
+            chart: {
+                type: 'column', //指定图表的类型，默认是折线图（line）
+                style:{
+                    fontSize:'12px',
+                    fontWeight:'bold'
+                },
+                alignTicks:false,
+                inverted:true
+            },
+            title: {
+                text: '个股选择', //指定图表标题
+
+            },
+            xAxis: {
+                lineWidth:1,
+                categories: ['第一个', '第二个', '第三个'] //指定x轴分组
+            },
+            yAxis: {
+                lineWidth:1,
+                title: {
+                    text: null //指定y轴的标题
+                },
+                labels:{
+                    enabled:true,
+                    formatter:function() {
+                        console.log(this);
+                        return this.value;
+                    }
+                }
+            },
+            series: [{ //指定数据列
+                name: 'Jane', //数据列名
+                data: [1, -1, 4] //数据
+            }]
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div id="container" style="min-width:400px;height:400px"></div>
+</body>
+
+</html>
